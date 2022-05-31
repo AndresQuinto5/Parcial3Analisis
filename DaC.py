@@ -56,12 +56,15 @@ def maxSubArraySum(arr, l, h):
 
 
 # Main
-arr = [-2, -3, 4, -1, -2, 1, 5, -3]
-n = len(arr)
+a = 0
+while a <= 10:
+	arr = [-99,-39,-33,-15,94,-80,51,52,9,-87,-25,-73,78,-10,63,-40,39,-16,-68,-31,95,-78,-65,-13,36,9,-94,61,-69,-39,-87,-57,73,-27,74,57,41,-76,36,16,57,76,-65,41,-52,-79,-62,33,36,-99]
+	n = len(arr)
 
-inicio = timeit.timeit()
-max_sum = maxSubArraySum(arr, 0, n-1)
-print("Maximum contiguous sum is ", max_sum)
-final = timeit.timeit()
-print("\nTiempo total:\n", abs(final - inicio), "\n")
+	inicio = timeit.timeit()
+	max_sum = maxSubArraySum(arr, 0, n-1)
+	print("Maximum contiguous sum is ", max_sum)
+	final = timeit.timeit()
+	print(abs(final - inicio))
+	a += 1
 
