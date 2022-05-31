@@ -63,5 +63,5 @@ inicio = timeit.timeit()
 max_sum = maxSubArraySum(arr, 0, n-1)
 print("Maximum contiguous sum is ", max_sum)
 final = timeit.timeit()
-print("Tiempo total: ", final - inicio)
+print("\nTiempo total:\n", abs(final - inicio), "\n")
 
